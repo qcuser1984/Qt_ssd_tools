@@ -1,0 +1,61 @@
+LcrDownload rev  2023-04-06 | 0fd7107cc4b7+ 
+ 
+Inq_LCR_Status
+Inq_SD_Mount
+Unmounted
+Seq_Mount_SD
+OK
+Found 1 recordings
+Download 1 of 1
+found a live seis channel  0 @ 2ms                                                                                            
+found a live seis channel  1 @ 2ms                                                                                            
+found a live seis channel  2 @ 2ms                                                                                            
+found a live seis channel  3 @ 2ms                                                                                            
+aux channel                15 was recording @ 1s                                                                              
+aux channel                14 was recording @ 1s                                                                              
+aux channel                13 was recording @ 1s                                                                              
+aux channel                12 was recording @ 1s                                                                              
+aux channel                11 was recording @ 1s                                                                              
+aux channel                10 was recording @ 1s                                                                              
+aux channel                9 was recording @ 1s                                                                               
+aux channel                8 was recording @ 1s                                                                               
+aux channel                7 was recording @ 1s                                                                               
+aux channel                6 was recording @ 1s                                                                               
+aux channel                5 was recording @ 1s                                                                               
+aux channel                4 was recording @ 1s                                                                               
+aux channel                3 was recording @ 1s                                                                               
+aux channel                2 was recording @ 1s                                                                               
+aux channel                1 was recording @ 1s                                                                               
+aux channel                0 was recording @ 1s                                                                               
+Out File                   /dl3/BR001522_ARAM_Petrobras/Recordings/2023-06-04/auto_155_163604_b165_rsn966_seq1_1679576421.raw 
+ 
+Start second 1679576421 (23-Mar-2023_13_00_21)
+Stop second 1685896499 (04-Jun-2023_16_34_59)
+Processing 6320078 seconds
+Stored Skew Value = 0.00524513 ppm
+Time out during read data @ sector 66541694
+Download incorrect read data size Exp 3109888 Act 163840
+Time out download seek @ sector 66541694
+Unmounting SD
+Seq_Mount_SD
+OK
+Trying data repair
+Restarting 10.198.237.90 service ReadSd
+Restart Ok
+Mount SD
+Reading 74976863 sectors
+Time out waiting for data return @ sector 66540544
+ERROR  Failed SD read at sector 66540544
+ 
+Doing retry 1 at sector 66544640
+Unmount SD
+Restarting 10.198.237.90 service ReadSd
+Restart Ok
+Mount SD
+Retry OK
+Unmount SD
+Read 74976863 sectors... Analyzing data
+Created raw file  /dl3/RawImageRepairs/2023-06-04/repair_155_173112_b165_rsn966_seq1_1679576421.raw
+Finished LcrSdExtract
+ERROR  Data loss
+ 
