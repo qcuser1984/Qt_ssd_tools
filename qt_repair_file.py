@@ -32,6 +32,7 @@ __version__ = "prod 0.0.1"
 # Versions
 # prod 0.0.1 June 2023
 # prod 0.0.2 June 2023
+# prod 0.0.3 June 2023
 
 #dialog window
 class DumbDialog(QDialog):
@@ -199,11 +200,9 @@ class DumbDialog(QDialog):
                     padded_line2 = f"{line}\t\t{point}\t\t\t{index}\t\t\t{start2}\t\t{stop2}\n"
                     append_padded(padded_file2,padded_line2)
                     message = qt_append_padded
-
                 self.infoLabel.setText(message)
                 self.appendButton.setEnabled(False)
                 self.paddingButton.setEnabled(False)
-
         else:
             message = f"<font color = {alert_color}><b>Couldn't find analyze file for serial {self.serial}</font></b>"
             self.openButton.setFocus()
@@ -212,7 +211,7 @@ class DumbDialog(QDialog):
             self.paddingButton.setEnabled(True)
 
 if __name__ == "__main__":
-    digest_file = r"/home/geo3/Public/zdmefr/02_Tools/Inputs/DigestDownloads.csvManual"
+    digest_file = r"/qc/06-ARAM/digest/DigestDownloads.csvManual"
     padded_file = r"/qc/06-ARAM/padding/padded_nodes.txt"
     padded_file2 = r"/qc/06-ARAM/padding/padded_nodes_2.txt"
     fdnav_file = r"/qc/06-ARAM/nav/Postplot_R/4dnav_lines/BR001522_4dnav.csv"
